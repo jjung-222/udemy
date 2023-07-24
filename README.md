@@ -1,6 +1,7 @@
 # react-guide
 
 1. 리액트 프로젝트를 처음 만들 때, (node.js 가 필요함 npx 명령어를 사용하기 위해서는)
+
    터미널 열고 리액트 프로젝트를 만들 폴더를 찾는다.
    cd 폴더이름 _ 여기서 cd란 change directory
 
