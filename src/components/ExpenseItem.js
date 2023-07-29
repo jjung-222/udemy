@@ -1,14 +1,16 @@
 import './ExpenseItem.css'
 
 function ExpenseItem () {
-
+    const expenseDate = new Date(2021, 8, 12); //상수추가
+    const expenseTitle = 'Car Insurance';
+    const expenseAmount = 294.67;
     //중요한 규칙이 하나 있습니다. 반환하는 문장마다 또는 JSX코드 조각마다 반드시 한 개의 루트 요소를 갖는다
     return  (
     <div className="expense-item">
-        <div>March 28th 2021</div>
+        <div>{expenseDate.toISOString()}</div>
         <div className="expense-item__description">
-            <h2>Car Insurance</h2>
-            <div className="expense-item__price">$294.50</div>
+            <h2>{expenseTitle}</h2>
+            <div className="expense-item__price">${expenseAmount}</div>
         </div>
     </div>
     );
